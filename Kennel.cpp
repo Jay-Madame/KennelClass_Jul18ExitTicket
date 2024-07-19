@@ -1,10 +1,11 @@
 #include "Kennel.h"
+#include "Dog.h"
 
 int Kennel::kennelCount = 0;
 
 Kennel::Kennel() : dogs(nullptr)
 {
-    
+
 }
 Kennel::Kennel(int amtOfDogs)
 {

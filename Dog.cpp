@@ -6,11 +6,14 @@ Dog::Dog()
     breed = "Pitbull-Boxer mix";
     age = 2;
     gender = "boy";
-    dogDesc(gender);
 }
 Dog::Dog(std::string Name, std::string Breed, int Ag, std::string Gender) : name(Name), breed(Breed), age(Ag), gender(Gender)
 {
-    dogDesc(gender);
+}
+
+std::string Dog::getGender()
+{
+    return gender;
 }
 int Dog::dogAgeToHumanYears()
 {
